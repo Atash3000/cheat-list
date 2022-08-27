@@ -5,6 +5,7 @@ import Script from 'next/script'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
 import Layout from '../components/layout/Layout'
+import '../styles/globals.css'
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
@@ -25,7 +26,7 @@ const App = ({ Component, pageProps }) => {
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.NEXT_PUBLIC_GA_ID}`}
       />
       <Script
         id="gtag-init"

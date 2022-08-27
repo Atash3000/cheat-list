@@ -10,7 +10,7 @@ export default function Home({ posts }) {
   return (
     <div>
       {posts.map((post, index) => {
-        return <Post key={index} post={post} />;
+        return <h1 key={index}>HELLO </h1>;
       })}
     </div>
   );

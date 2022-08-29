@@ -3,15 +3,22 @@ import fs from 'fs';
 import path from 'path';
 import React, { useEffect, useState } from 'react';
 import matter from 'gray-matter';
+import Link from 'next/link'
 
 export default function Home(props) {
   const {posts} = props;
-  console.log(posts)
   return (
     <div>
-      HELLO
+      {posts.map(post=>{
+        const {frontMatter:{title},slug} = post
+        return (
+         <>
+          <Link href={`/${slug}`} key={title} >{title}</Link>
+         </>
+        )
+      })}
     </div>
-  );
+  )
 }
 
 export async function getStaticProps() {
@@ -32,4 +39,6 @@ export async function getStaticProps() {
   return {
     props: { posts },
   };
-}
+};
+
+

@@ -5,8 +5,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: 'class',
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
   theme: {
     colors:{
+      lang:{
+        js:'#fe4322',
+        py:'#dede33'
+      },
       primary:{
         light:'#2C394E',
         DEFAULT:'#1e293b',
@@ -17,7 +25,8 @@ module.exports = {
         DEFAULT:'#fff',
         light:'#F1F1F1',
         dark:'#DFDFDF'
-      }
+      },
+     
     },
     spacing: {
       px: '1px',

@@ -5,13 +5,12 @@ import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
-function PostPage({frontMatter:{title,data,cover_image},slug,content}) {
+function PostPage({frontMatter:{title,data,cover_image,background},slug,content}) {
   return (
     <div>
-    <h1>PageSection</h1>
-    <h2>{title}</h2>
-    <ReactMarkdown remarkPlugins={[remarkGfm]} >{content}</ReactMarkdown>
-
+      <h1 className={background}>PageSection</h1>
+      <h2 style={{background:background}} >{title}</h2>
+      <ReactMarkdown remarkPlugins={[remarkGfm]} >{content}</ReactMarkdown>
     </div>
   )
 }

@@ -7,7 +7,6 @@ function MainContext(props) {
     const handleCheckbox = ()=>{
       setValue((prevState)=>!prevState)
     };
-
     useEffect(()=>{
         const html = document.querySelector('html');
         if(value){

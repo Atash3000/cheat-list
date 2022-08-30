@@ -1,6 +1,5 @@
 import React from 'react'
 import Card from './Card'
-import Jumbotron from './Jumbotron'
 
 function MainContainer({posts}) {
   return (

@@ -8,6 +8,9 @@ export default class MyDocument extends Document {
         <Html lang="en" >
           <Head>
             {/* Global Site Tag (gtag.js) - Google Analytics */}
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3362625982165215"
+               crossOrigin="anonymous"/>
+              /> 
             <script
               async
               src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}

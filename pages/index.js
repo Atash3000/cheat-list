@@ -5,24 +5,17 @@ import React, { useEffect, useState } from 'react';
 import matter from 'gray-matter';
 import Link from 'next/link'
 import Card from '../components/Card';
+import MainContainer from '../components/MainContainer';
 
 
 
-export default function Home(props) {
-  const {posts} = props;
+export default function Home({posts}) {
   
   if(!posts){
     return <h1>...continue</h1>
   }
   return (
-    <div>
-      {posts.map((post,index)=>{
-        console.log(post.frontMatter.background,'COLORRRR')
-        return (
-          <Card color={post.frontMatter.background} key={index} post={post} />
-        )
-      })}
-    </div>
+      <MainContainer posts={posts} />
   )
 }
 

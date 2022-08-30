@@ -1,25 +1,27 @@
 /** @type {import('tailwindcss').Config} */ 
 const { colors: defaultColors } = require('tailwindcss/defaultTheme')
 module.exports = {
+  darkMode: 'class',
   content: [
     "./pages/**/*.{js,html}",
     "./components/**/*.{js,html}",
   ],
+  
   plugins: [
   ],
   theme: {
     colors:{
       primary:{
         light:'#2C394E',
-        DEFAULT:'#1e293b',
+        DEFAULT:'#0f172a',
         dark:'#1B2535'
       },
-      green:"#90FF0A",
-      blue:'#3246a8',
+      green: "#90FF0A",
+      blue:  '#3c82f6',
       white:{
-        DEFAULT:'#fff',
-        light:'#F1F1F1',
-        dark:'#DFDFDF'
+        DEFAULT: '#F0F0F0',
+        light:   '#FBFBFB',
+        dark:    '#DEDEDE'
       },
      
     },

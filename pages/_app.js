@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag.js';
 import Layout from '../components/layout/Layout'
 import '../styles/globals.css'
+import MainContext from '../context/MainContext.js';
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
@@ -44,9 +45,11 @@ const App = ({ Component, pageProps }) => {
           `,
         }}
       />
+      <MainContext> 
       <Layout>  
       <Component {...pageProps} />
       </Layout>
+      </MainContext>
     </>
   )
 }

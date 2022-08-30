@@ -9,7 +9,7 @@ function PostPage({frontMatter:{title,data,cover_image,background},slug,content}
   return (
     <div>
       <h1 className={background}>PageSection</h1>
-      <h2 style={{background:background}} >{title}</h2>
+      <h2 style={{background:background}}>{title}</h2>
       <ReactMarkdown remarkPlugins={[remarkGfm]} >{content}</ReactMarkdown>
     </div>
   )

@@ -4,17 +4,22 @@ import path from 'path';
 import React, { useEffect, useState } from 'react';
 import matter from 'gray-matter';
 import Link from 'next/link'
+import Card from '../components/Card';
+
+
 
 export default function Home(props) {
   const {posts} = props;
+  
+  if(!posts){
+    return <h1>...continue</h1>
+  }
   return (
     <div>
-      {posts.map(post=>{
-        const {frontMatter:{title},slug} = post
+      {posts.map((post,index)=>{
+        console.log(post.frontMatter.background,'COLORRRR')
         return (
-         <>
-          <Link href={`/${slug}`} key={title} >{title}</Link>
-         </>
+          <Card color={post.frontMatter.background} key={index} post={post} />
         )
       })}
     </div>

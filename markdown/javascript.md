@@ -2,7 +2,8 @@
 title : Javascript
 Author :  Atamurad
 intro: A JavaScript cheat sheet with the most important concepts, functions, methods, and more. A complete quick reference for beginners.
-background: bg-[#fed223]
+background: "#9ca832"
+image: "/icons/javascript.png"
 ---
 
 Getting started {.cols-3}

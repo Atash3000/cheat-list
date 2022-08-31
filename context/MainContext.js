@@ -23,14 +23,6 @@ function MainContext(props) {
         }
     },[value])
 
- 
-    useEffect(()=>{
-        const body = document.querySelector('body')
-        body.classList.add('bg-white-dark')
-        body.classList.add("dark:bg-primary");
-
-    },[])
-
      const icons = {
       css: DiCss3,
       javascript: DiJavascript1,

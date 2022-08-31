@@ -9,6 +9,13 @@
     font-family: Proxima Nova, system-ui, sans-serif;
   }
 }
+
+@supports(padding:max(0px)) {
+  body, header, footer {
+      padding-left: min(0vmin, env(safe-area-inset-left));
+      padding-right: min(0vmin, env(safe-area-inset-right));
+  }
+}
 .leading-relaxed {
   line-height: 1.625em;
 }

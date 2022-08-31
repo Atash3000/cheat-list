@@ -2,8 +2,7 @@
 title : Python
 Author :  Atamurad
 intro: A JavaScript cheat sheet with the most important concepts, functions, methods, and more. A complete quick reference for beginners.
-background: '#322db5'
-image: "/icons/javascript.png"
+background: '#336c99'
 ---
 
 Getting started {.cols-3}

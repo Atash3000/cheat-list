@@ -16,12 +16,16 @@ module.exports = {
         DEFAULT:'#0f172a',
         dark:'#1B2535'
       },
-      green: "#90FF0A",
+      green: {
+        DEFAULT:"#73cc08",
+        light:"#90ff0a",
+        dark:"#64b207"
+      },
       blue:  '#3c82f6',
       white:{
         DEFAULT: '#F0F0F0',
         light:   '#FBFBFB',
-        dark:    '#DEDEDE'
+        dark:    '#CCCCCC'
       },
      
     },

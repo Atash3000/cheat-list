@@ -1,12 +1,19 @@
-import React,{useState,createContext, useEffect} from 'react'
+import React,{useState,createContext, useEffect} from 'react';
+import {DiCss3,DiJavascript1,DiPython,DiDart} from 'react-icons/di'
+
 export const context = createContext({})
 
 function MainContext(props) {
 
-    const [value,setValue] = useState(false)
+    const [value,setValue] = useState(true);
+
     const handleCheckbox = ()=>{
       setValue((prevState)=>!prevState)
     };
+
+
+
+
     useEffect(()=>{
         const html = document.querySelector('html');
         if(value){
@@ -19,13 +26,21 @@ function MainContext(props) {
  
     useEffect(()=>{
         const body = document.querySelector('body')
-        body.classList.add('bg-white')
+        body.classList.add('bg-white-dark')
         body.classList.add("dark:bg-primary");
 
     },[])
+
+     const icons = {
+      css: DiCss3,
+      javascript: DiJavascript1,
+      python: DiPython,
+      dart: DiDart
+  };
    
     const values = {
         value,
+        icons,
         handleCheckbox
     }
   return (

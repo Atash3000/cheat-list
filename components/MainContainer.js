@@ -1,9 +1,8 @@
 import React from 'react'
-import Card from './Card'
 
 function MainContainer({posts}) {
   return (
-    <section className='bg-blue dark:bg-primary w-full flex flex-coltext-center pt-14'>
+    <section className='bg-blue dark:bg-primary-light w-full flex flex-coltext-center pt-14'>
       <div className='max-container lg:w-3/4'>
         <h1 className='text-4xl md:text-5xl text-white dark:text-white-dark leading-relaxed text-center'>
           Cheat list by Atamurad X
@@ -20,8 +19,3 @@ function MainContainer({posts}) {
 export default MainContainer
 
 
-// {posts.map((post,index)=>{
-//   return (
-//     <Card color={post.frontMatter.background} key={index} post={post} />
-//   )
-// })}

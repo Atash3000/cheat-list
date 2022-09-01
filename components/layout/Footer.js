@@ -1,5 +1,6 @@
 import React from 'react';
 import {FaFacebookF} from 'react-icons/fa'
+import Link from 'next/link';
 
 function Footer() {
   return (
@@ -11,8 +12,8 @@ function Footer() {
               Top <span className='text-slate-400'>Cheatsheet</span>
             </h2>
             <section className='w-full grid grid-cols-2 gap-2 md:gap-4'>
+              <Link  href='/python'> 
               <a
-                href='/python'
                 className='group flex items-center p-3 bg-white rounded-lg hover:shadow dark:bg-slate-900 hover:bg-green-500'
               >
                 <div className='ml-4'>
@@ -27,8 +28,9 @@ function Footer() {
                   </p>
                 </div>
               </a>
+              </Link>
+              <Link href='/javascript' > 
               <a
-                href='/javascript'
                 className='group flex items-center p-3 bg-white rounded-lg hover:shadow dark:bg-slate-900 hover:bg-green-500'
               >
                 <div className='ml-4'>
@@ -43,13 +45,14 @@ function Footer() {
                   </p>
                 </div>
               </a>
+              </Link>
+              <Link href='/vim'> 
               <a
-                href='/vim'
                 className='group flex items-center p-3 bg-white rounded-lg hover:shadow dark:bg-slate-900 hover:bg-green-500'
               >
                 <div className='ml-4'>
                   <p className='mb-1 text-sm font-medium text-slate-900 dark:text-slate-300 group-hover:text-white'>
-                    Vim{' '}
+                    Vim
                     <span className='text-slate-400 group-hover:text-white'>
                       Cheatsheet
                     </span>
@@ -59,8 +62,9 @@ function Footer() {
                   </p>
                 </div>
               </a>
+              </Link>
+              <Link href='/bash' > 
               <a
-                href='/bash'
                 className='group flex items-center p-3 bg-white rounded-lg hover:shadow dark:bg-slate-900 hover:bg-green-500'
               >
                 <div className='ml-4'>
@@ -75,6 +79,7 @@ function Footer() {
                   </p>
                 </div>
               </a>
+              </Link>
             </section>
           </div>
           <div className='md:w-1/2 md:pl-4'>
@@ -82,8 +87,8 @@ function Footer() {
               Recent <span className='text-slate-400'>Cheatsheet</span>
             </h2>
             <section className='w-full grid grid-cols-2 gap-2 md:gap-4'>
+              <Link href='/html-char'> 
               <a
-                href='/html-char'
                 className='group flex items-center p-3 bg-white rounded-lg hover:shadow dark:bg-slate-900 hover:bg-green-500'
               >
                 <div className='ml-4'>
@@ -98,8 +103,9 @@ function Footer() {
                   </p>
                 </div>
               </a>
+              </Link>
+              <Link href='/'> 
               <a
-                href='/iso-639-1'
                 className='group flex items-center p-3 bg-white rounded-lg hover:shadow dark:bg-slate-900 hover:bg-green-500'
               >
                 <div className='ml-4'>
@@ -114,8 +120,9 @@ function Footer() {
                   </p>
                 </div>
               </a>
+              </Link>
+              <Link href='rust' > 
               <a
-                href='/rust'
                 className='group flex items-center p-3 bg-white rounded-lg hover:shadow dark:bg-slate-900 hover:bg-green-500'
               >
                 <div className='ml-4'>
@@ -130,8 +137,9 @@ function Footer() {
                   </p>
                 </div>
               </a>
+              </Link>
+              <Link href='/vscode' >
               <a
-                href='/vscode'
                 className='group flex items-center p-3 bg-white rounded-lg hover:shadow dark:bg-slate-900 hover:bg-green-500'
               >
                 <div className='ml-4'>
@@ -146,66 +154,37 @@ function Footer() {
                   </p>
                 </div>
               </a>
+              </Link>
             </section>
           </div>
         </div>
         <div className='hidden md:block flex-shrink-0 mx-auto  mt-8 md:mx-8 max-w-xs'>
+          <Link href='/' > 
           <a
-            href='/'
             className='flex font-medium items-center justify-center md:justify-start text-slate-800 dark:text-slate-300'
           >
             <span className='domain text-slate-600 dark:text-slate-300 text-lg md:text-2xl'>
               Cheat<span className='text-green-500'>List</span>.io
             </span>
           </a>
+          </Link>
           <p className='mt-5 text-sm text-slate-500'>
             Share quick reference and cheat sheet for developers.
           </p>
           <div className='share mt-4'>
-            <a href='/notes'>#Notes</a>
+           <Link href='/hotes'><a>#Notes</a></Link>
           </div>
           <div className='share mt-8'>
             <span className='inline-flex text-slate-500 sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start'>
+              <Link href='https://facebook.com/sharer/sharer.php?u=https://quickref.me'> 
               <a
                 className='mr-3'
-                href='https://facebook.com/sharer/sharer.php?u=https://quickref.me'
                 rel='external nofollow noreferrer'
                 target='_blank'
               >
                 <FaFacebookF className='text-slate-900 dark:text-slate-200' />
               </a>
-              <a
-                className='mx-3'
-                href='https://twitter.com/intent/tweet/?text=Share%20quick%20reference%20and%20cheat%20sheet%20for%20developers&amp;url=https://quickref.me'
-                rel='external nofollow noreferrer'
-                target='_blank'
-              >
-                <i className='icon text-xl icon-twitter'></i>
-              </a>
-              <a
-                className='mx-3'
-                href='https://reddit.com/submit/?url=https://quickref.me&amp;resubmit=true&amp;title=Share%20quick%20reference%20and%20cheat%20sheet%20for%20developers'
-                rel='external nofollow noreferrer'
-                target='_blank'
-              >
-                <i className='icon text-xl icon-reddit'></i>
-              </a>
-              <a
-                className='mx-3'
-                href='https://pinterest.com/pin/create/button/?url=https://quickref.me&amp;description=Share%20quick%20reference%20and%20cheat%20sheet%20for%20developers'
-                rel='external nofollow noreferrer'
-                target='_blank'
-              >
-                <i className='icon text-xl icon-pinterest'></i>
-              </a>
-              <a
-                className='ml-3'
-                href='https://www.linkedin.com/shareArticle?url=https://quickref.me&amp;title=QuickRef.ME%20-%20Quick%20Reference%20Cheat%20Sheet&amp;summary=Share%20quick%20reference%20and%20cheat%20sheet%20for%20developers'
-                rel='external nofollow noreferrer'
-                target='_blank'
-              >
-                <i className='icon text-xl icon-linkedin'></i>
-              </a>
+              </Link>
             </span>
           </div>
         </div>

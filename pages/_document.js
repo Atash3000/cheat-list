@@ -7,7 +7,6 @@ export default class MyDocument extends Document {
       return (
         <Html lang="en" >
           <Head>
-          <meta name='viewport' content='initial-scale=1, viewport-fit=cover'/>
            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3362625982165215"
            crossOrigin="anonymous"></script>
             {/* Global Site Tag (gtag.js) - Google Analytics */}
@@ -28,7 +27,7 @@ export default class MyDocument extends Document {
               }}
             />
           </Head>
-          <body className='bg-white dark:bg-primary h-screen'>
+          <body className='bg-slate-100 dark:bg-slate-900 h-screen'>
             <Main />
             <NextScript />
           </body>

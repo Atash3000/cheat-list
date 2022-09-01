@@ -1,5 +1,6 @@
 import React,{useState,createContext, useEffect} from 'react';
-import {DiCss3,DiJavascript1,DiPython,DiDart} from 'react-icons/di'
+import {DiCss3,DiJavascript1,DiPython,DiDart,DiJava,DiJqueryLogo} from 'react-icons/di'
+import {SiJson} from 'react-icons/si'
 
 export const context = createContext({})
 
@@ -7,12 +8,18 @@ function MainContext(props) {
 
     const [value,setValue] = useState(true);
 
-    const handleCheckbox = ()=>{
+    const handleSwitch = ()=>{
       setValue((prevState)=>!prevState)
     };
-
-
-
+    const icons = {
+      css: DiCss3,
+      javascript: DiJavascript1,
+      python: DiPython,
+      dart: DiDart,
+      java:DiJava,
+      json:SiJson,
+      jquer:DiJqueryLogo
+  };
 
     useEffect(()=>{
         const html = document.querySelector('html');
@@ -23,17 +30,12 @@ function MainContext(props) {
         }
     },[value])
 
-     const icons = {
-      css: DiCss3,
-      javascript: DiJavascript1,
-      python: DiPython,
-      dart: DiDart
-  };
+ 
    
     const values = {
         value,
         icons,
-        handleCheckbox
+        handleSwitch
     }
   return (
     <context.Provider value={values} >{props.children}</context.Provider>

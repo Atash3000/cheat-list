@@ -13,7 +13,7 @@ function Card({ post}) {
 
   return (
     <Link href={`/${slug}`}>
-      <div style={{ background: background }} className={`card`}>
+      <div style={{ background: background }} className={`card hover:opacity-80`}>
        <Icon className='text-white dark:text-white-dark text-xl sm:text-2xl md:text-3xl' />
         <p className='text-white dark:text-white-dark text-base'>{title}</p>
       </div>

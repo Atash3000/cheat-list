@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Card from '../components/Card';
 import MainContainer from '../components/MainContainer';
 import CardContainer from '../components/CardContainer';
+import Header from '../components/layout/Header';
 
 
 
@@ -16,10 +17,10 @@ export default function Home({posts}) {
     return <h1>...continue</h1>
   }
   return (
-      <>
-        <MainContainer posts={posts} />
-        <CardContainer posts ={posts} />
-      </>
+    <>
+      <MainContainer posts={posts} />
+      <CardContainer posts ={posts} />
+    </>
   )
 }
 

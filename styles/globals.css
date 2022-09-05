@@ -8,6 +8,41 @@
   html {
     font-family: Proxima Nova, system-ui, sans-serif;
   }
+
+ 
+
+}
+.wrapper{
+  @apply  flex flex-col bg-slate-200 dark:bg-slate-800 overflow-hidden rounded-lg min-w-fit min-h-fit;
+}
+
+.wrapper .section{
+  @apply py-5 text-sm;
+}
+.wrapper > h3{
+  @apply  self-end inline-block bg-green-700 text-slate-100 rounded-b-lg text-sm px-4 py-0.5
+}
+
+.kotak{
+  @apply w-full;
+}
+
+.grid-box{
+  @apply  grid gap-5  grid-cols-1   lg:grid-cols-3 ;
+}
+
+
+
+.kotak > h2{
+  display: block;
+  font-size: 23px;
+  padding: 23px 0;
+  margin-bottom: 23px;
+  margin-right: auto 0;
+}
+ .mdLayout{  color: #345;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -47,4 +82,14 @@
   white-space: nowrap;
   font-size: 1rem;
   line-height: 1.25rem;
+}
+
+.mdLayout {
+  color: #345;
+  display: flex;
+  flex-direction: column;
+}
+
+#intro{
+  color:red;
 }

@@ -11,15 +11,18 @@
   "dependencies": {
     "@reach/tooltip": "^0.17.0",
     "@tailwindcss/typography": "^0.5.4",
+    "buble": "^0.20.0",
     "gray-matter": "^4.0.3",
+    "html-react-parser": "^3.0.4",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-markdown": "^8.0.3",
     "react-syntax-highlighter": "^15.5.0",
-    "remark": "^14.0.2",
-    "remark-gfm": "^3.0.1"
+    "rehype-raw": "^6.1.1",
+    "remark-gfm": "^3.0.1",
+    "remark-rehype": "^10.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",

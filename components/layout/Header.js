@@ -1,8 +1,7 @@
-import React,{useState,useContext} from 'react';
+import React,{useContext} from 'react';
 import Link from 'next/link'
 import {context} from '../../context/MainContext';
 import Switcher from '../util/Switcher';
-import {GrCode} from 'react-icons/gr';
 import {FaCode} from 'react-icons/fa'
 
 function Header() {

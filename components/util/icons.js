@@ -1,6 +1,6 @@
 import {DiCss3,DiJavascript1,DiPython,DiDart} from 'react-icons/di'
 
-const icons = {
+export const icons = {
     css: <DiCss3/>,
     javascript: <DiJavascript1/>,
     python: <DiPython />,

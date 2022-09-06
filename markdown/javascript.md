@@ -224,11 +224,15 @@ numberOfColumns = 8;
 </div>
 
 
-JavaScript Conditionals {.cols-3}
+JavaScript Conditionals 
 ------------
+<div className='grid-box'>
 
+<div className='wrapper'>  
 
 ### if Statement
+
+<div className='section'>  
 
 ```javascript
 const isMailSent = true;
@@ -238,19 +242,46 @@ if (isMailSent) {
 }
 ```
 
+</div>
 
+</div>
+
+<div className='wrapper'>  
 
 ### Ternary Operator
 
-```javascript
-var x=1;
+<div className='section'>  
 
-// => true
-result = (x == 1) ? true : false;
+```javascript
+
+const age = 26;
+const x = age >= 21 ? "Beer" : "Juice";
+console.log(x); // "Beer"
+
+// && 
+
+let name = 'John';
+
+// without :(else) 
+ name ==='John' && console.log(name);
+
+ // with :(else) 
+ name ==='John' ? console.log(name) 
+ : console.log('Nothing');
+
 ```
 
+</div>
 
-### Operators {.row-span-2}
+</div>
+
+<div className='wrapper row-span2'>  
+
+### Operators
+
+<div className='section'>  
+
+#### Logical Operator ||
 
 ```javascript
 true || false;       // true
@@ -293,8 +324,16 @@ false ?? 'I lose'          //  false
 ```
 
 
+</div>
+
+</div>
+
+
+<div className='wrapper'>  
 
 ### else if
+
+<div className='section'>  
 
 ```javascript
 const size = 10;
@@ -312,9 +351,16 @@ if (size > 100) {
 ```
 
 
+</div>
 
+</div>
+
+
+<div className='wrapper'>  
 
 ### switch Statement
+
+<div className='section'>  
 
 ```javascript
 const food = 'salad';
@@ -331,7 +377,17 @@ switch (food) {
 }
 ```
 
+
+</div>
+
+</div>
+
+<div className='wrapper'>  
+
 ### == vs ===
+
+<div className='section'>  
+
 ```javascript
 0 == false   // true
 0 === false  // false, different type
@@ -344,12 +400,24 @@ null === undefined // false
 ```
 The `==` just check the value, `===` check both the value and the type.
 
+</div>
 
-JavaScript Functions {.cols-3}
+</div>
+
+</div>
+
+
+
+JavaScript Functions 
 ------------
 
+<div className='grid-box'>  
+
+<div className='wrapper'>  
 
 ### Functions
+
+<div className='section'>  
 
 ```javascript
 // Defining the function:
@@ -361,8 +429,16 @@ function sum(num1, num2) {
 sum(3, 6); // 9
 ```
 
+</div>
+
+</div>
+
+
+<div className='wrapper'>  
 
 ### Anonymous Functions
+
+<div className='section'> 
 
 ```javascript
 // Named function
@@ -376,10 +452,19 @@ const rocketToMars = function() {
 }
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper row-span2'>  
 
 
-### Arrow Functions (ES6) {.row-span-2}
+### Arrow Functions (ES6)
+
+<div className='section'> 
+
 #### With two arguments 
+
 ```javascript
 const sum = (param1, param2) => { 
   return param1 + param2; 
@@ -405,12 +490,18 @@ checkWeight(25); // => Weight : 25
 const multiply = (a, b) => a * b; 
 // => 60 
 console.log(multiply(2, 30)); 
+
 ```
-[Arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) available starting ES2015
 
+</div>
 
+</div>
+
+<div className='wrapper'>  
 
 ### return Keyword
+
+<div className='section'> 
 
 ```javascript
 // With return
@@ -424,8 +515,15 @@ function sum(num1, num2) {
 }
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'>  
 
 ### Calling Functions
+
+<div className='section'> 
 
 ```javascript
 // Defining the function
@@ -437,9 +535,15 @@ function sum(num1, num2) {
 sum(2, 4); // 6
 ```
 
+</div>
 
+</div>
+
+<div className='wrapper'>  
 
 ### Function Expressions
+
+<div className='section'> 
 
 ```javascript
 const dog = function() {
@@ -447,8 +551,15 @@ const dog = function() {
 }
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'>  
 
 ### Function Parameters
+
+<div className='section'> 
 
 ```javascript
 // The parameter is name
@@ -457,8 +568,16 @@ function sayHello(name) {
 }
 ```
 
+</div>
+
+</div>
+
+
+<div className='wrapper'>  
 
 ### Function Declaration
+
+<div className='section'> 
 
 ```javascript
 function add(num1, num2) {
@@ -466,14 +585,25 @@ function add(num1, num2) {
 }
 ```
 
+</div>
+
+</div>
 
 
+</div>
 
-JavaScript Scope  {.cols-3}
+
+JavaScript Scope 
 ------------
 
+<div className='grid-box'>  
+
+<div className='wrapper'> 
 
 ### Scope
+
+
+<div className='section'> 
 
 ```javascript
 function myFunction() {
@@ -486,8 +616,15 @@ function myFunction() {
 // Code here can't use pizzaName
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
 
 ### Block Scoped Variables
+
+<div className='section'> 
 
 ```javascript
 const isLoggedIn = true;
@@ -501,8 +638,15 @@ console.log(statusMessage);
 
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
 
 ### Global Variables
+
+<div className='section'> 
 
 ```javascript
 // Variable declared globally
@@ -515,8 +659,16 @@ function printColor() {
 printColor(); // => blue
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
 
 ### let vs var
+
+<div className='section'> 
+
 ```javascript
 for (let i = 0; i < 3; i++) {
   // This is the Max Scope for 'let'
@@ -534,8 +686,18 @@ for (var i = 0; i < 3; i++) {
 ```
 `var` is scoped to the nearest function block, and `let` is scoped to the nearest enclosing block.
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
+
 ### Loops with closures
-```javascript{.wrap}
+
+
+<div className='section'> 
+
+```javascript
 // Prints 3 thrice, not what we meant.
 for (var i = 0; i < 3; i++) {
   setTimeout(_ => console.log(i), 10);
@@ -550,15 +712,62 @@ for (let j = 0; j < 3; j++) {
 ```
 The variable has its own copy using `let`, and the variable has shared copy using `var`.
 
+</div>
 
+</div>
+
+<div className='wrapper'> 
+
+### this keyword
+
+<div className='section'> 
+
+```javascript
+
+
+
+console.log(this===window) // true
+
+const name ='John';
+
+const person = {
+  name :'Kate',
+  sayHello : function(){
+    console.log('Hello ' + this.name ) 
+    //  output :Hello Kate
+  }
+};
+```
+---
+```javascript
+
+const student = {
+  name :'Kate',
+  sayHello : function(){
+    console.log('Hello ' + name ) 
+    // output: Hello John
+  };
+};
+```
+
+</div>
+
+</div>
+
+</div>
 
 
 
 JavaScript Arrays  {.cols-3}
 ------------
 
+<div className='grid-box'> 
+
+<div className='wrapper'> 
 
 ### Arrays
+
+<div className='section'> 
 
 ```javascript
 const fruits = ["apple", "orange", "banana"];
@@ -566,17 +775,31 @@ const fruits = ["apple", "orange", "banana"];
 // Different data types
 const data = [1, 'chicken', false];
 ```
+</div>
+
+</div>
+
+<div className='wrapper'> 
 
 ### Property .length
+
+<div className='section'> 
 
 ```javascript
 const numbers = [1, 2, 3, 4];
 
 numbers.length // 4
 ```
+</div>
 
+</div>
+
+
+<div className='wrapper'> 
 
 ### Index
+
+<div className='section'> 
 
 ```javascript
 // Accessing an array element
@@ -586,18 +809,15 @@ console.log(myArray[0]); // 100
 console.log(myArray[1]); // 200
 ```
 
+</div>
 
-### Mutable chart
-|           | add | remove | start | end |
-|:----------|:---:|:------:|:-----:|:---:|
-| `push`    | ✔   |        |       | ✔   |
-| `pop`     |     | ✔      |       | ✔   |
-| `unshift` | ✔   |        | ✔     |     |
-| `shift`   |     | ✔      | ✔     |     |
-{.show-header}
+</div>
 
+<div className='wrapper'> 
 
 ### Method .push()
+
+<div className='section'> 
 
 ```javascript
 // Adding a single element:
@@ -610,8 +830,15 @@ numbers.push(3, 4, 5);
 ```
 Add items to the end and returns the new array length.
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
 
 ### Method .pop()
+
+<div className='section'> 
 
 ```javascript
 const fruits = ["apple", "orange", "banana"];
@@ -621,8 +848,15 @@ console.log(fruits); // ["apple", "orange"]
 ```
 Remove an item from the end and returns the removed item.
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
 
 ### Method .shift()
+
+<div className='section'> 
 
 ```javascript
 let cats = ['Bob', 'Willy', 'Mini'];
@@ -631,8 +865,15 @@ cats.shift(); // ['Willy', 'Mini']
 ```
 Remove an item from the beginning and returns the removed item.
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
 
 ### Method .unshift()
+
+<div className='section'> 
 
 ```javascript
 let cats = ['Bob'];
@@ -646,9 +887,16 @@ cats.unshift('Puff', 'George');
 Add items to the beginning and returns the new array length.
 
 
+</div>
 
+</div>
+
+<div className='wrapper'> 
 
 ### Method .concat()
+
+<div className='section'> 
+
 ```javascript
 const numbers = [3, 2, 1]
 const newFirstNumber = 4
@@ -661,12 +909,21 @@ numbers.concat(newFirstNumber)
 ```
 if you want to avoid mutating your original array, you can use concat.
 
+</div>
+
+</div>
+
+</div>
 
 JavaScript Loops  {.cols-3}
 ------------
+<div className='grid-box'> 
 
+<div className='wrapper'> 
 
 ### While Loop
+
+<div className='section'> 
 
 ```javascript
 while (condition) {
@@ -681,7 +938,16 @@ while (i < 5) {
 ```
 
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
+
 ### Reverse Loop
+
+
+<div className='section'> 
 
 ```javascript
 const fruits = ["apple", "orange", "banana"];
@@ -695,8 +961,15 @@ for (let i = fruits.length - 1; i >= 0; i--) {
 // => 0. apple
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
 
 ### Do…While Statement
+
+<div className='section'> 
 
 ```javascript
 x = 0
@@ -710,8 +983,16 @@ do {
 // => 0 1 3 6 10
 ```
 
+</div>
+
+</div>
+
+
+<div className='wrapper'> 
 
 ### For Loop
+
+<div className='section'> 
 
 ```javascript
 for (let i = 0; i < 4; i += 1) {
@@ -721,8 +1002,15 @@ for (let i = 0; i < 4; i += 1) {
 // => 0, 1, 2, 3
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
 
 ### Looping Through Arrays
+
+<div className='section'> 
 
 ```javascript
 for (let i = 0; i < array.length; i++){
@@ -732,8 +1020,15 @@ for (let i = 0; i < array.length; i++){
 // => Every item in the array
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
 
 ### Break
+
+<div className='section'> 
 
 ```javascript
 for (let i = 0; i < 99; i += 1) {
@@ -745,7 +1040,16 @@ for (let i = 0; i < 99; i += 1) {
 // => 0 1 2 3 4 5
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
+
 ### Continue
+
+<div className='section'> 
+
 ```javascript
 for (i = 0; i < 10; i++) {
   if (i === 3) { continue; }
@@ -753,8 +1057,15 @@ for (i = 0; i < 10; i++) {
 }
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
 
 ### Nested
+
+<div className='section'> 
 
 ```javascript
 for (let i = 0; i < 2; i += 1) {
@@ -764,9 +1075,15 @@ for (let i = 0; i < 2; i += 1) {
 }
 ```
 
+</div>
 
+</div>
+
+<div className='wrapper'> 
 
 ### for...in loop
+
+<div className='section'> 
 
 ```javascript
 const fruits = ["apple", "orange", "banana"];
@@ -779,7 +1096,15 @@ for (let index in fruits) {
 // => 2
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'> 
+
 ### for...of loop
+
+<div className='section'> 
 
 ```javascript
 const fruits = ["apple", "orange", "banana"];
@@ -792,12 +1117,21 @@ for (let fruit of fruits) {
 // => banana
 ```
 
+</div>
+
+</div>
+</div>
 
 JavaScript Iterators {.cols-2}
 ------------
 
+<div className='grid-box grid-col2'> 
+
+<div className='wrapper'> 
 
 ### Functions Assigned to Variables
+
+<div className='section'> 
 
 ```javascript
 let plusFive = (number) => {
@@ -812,8 +1146,14 @@ f(9); // 14
 
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Callback Functions
+
+<div className='section'> 
 
 ```javascript
 const isEven = (n) => {
@@ -830,7 +1170,15 @@ printMsg(isEven, 4);
 // => The number 4 is an even number: True.
 ```
 
+</div>
+</div>
+
+
+<div className='wrapper'> 
+
 ### Array Method .reduce()
+
+<div className='section'> 
 
 ```javascript
 const numbers = [1, 2, 3, 4];
@@ -841,9 +1189,14 @@ const sum = numbers.reduce((accumulator, curVal) => {
 
 console.log(sum); // 10
 ```
+</div>
+</div>
 
+<div className='wrapper'> 
 
 ### Array Method .map()
+
+<div className='section'> 
 
 ```javascript
 const members = ["Taylor", "Donald", "Don", "Natasha", "Bobby"];
@@ -855,8 +1208,14 @@ const announcements = members.map((member) => {
 console.log(announcements);
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Array Method .forEach()
+
+<div className='section'> 
 
 ```javascript
 const numbers = [28, 77, 45, 99, 27];
@@ -865,9 +1224,14 @@ numbers.forEach(number => {
   console.log(number);
 }); 
 ```
+</div>
+</div>
 
+<div className='wrapper'> 
 
 ### Array Method .filter()
+
+<div className='section'> 
 
 ```javascript
 const randomNumbers = [4, 11, 42, 14, 39];
@@ -876,13 +1240,21 @@ const filteredArray = randomNumbers.filter(n => {
 });
 ```
 
-
+</div>
+</div>
+</div>
 
 JavaScript Objects {.cols-2}
 ------------
 
+<div className='grid-box'>
+
+<div className='wrapper'> 
 
 ### Accessing Properties
+
+<div className='section'> 
+
 
 ```javascript
 const apple = { 
@@ -892,9 +1264,14 @@ const apple = {
 console.log(apple.color); // => Green
 console.log(apple.price.bulk); // => $3/kg
 ```
+</div>
+</div>
 
+<div className='wrapper'> 
 
 ### Naming Properties
+
+<div className='section'> 
 
 ```javascript
 // Example of invalid key names
@@ -907,10 +1284,15 @@ const trainSchedule = {
   +compartment: 'C'
 }
 ```
+</div>
+</div>
 
-
+<div className='wrapper'> 
 
 ### Non-existent properties
+
+<div className='section'> 
+
 
 ```javascript
 const classElection = {
@@ -920,8 +1302,15 @@ const classElection = {
 console.log(classElection.place); // undefined
 ```
 
+</div>
+</div>
+
+
+<div className='wrapper'> 
 
 ### Mutable {.row-span-2}
+
+<div className='section row-span2 '> 
 
 ```javascript
 const student = {
@@ -942,9 +1331,15 @@ student = {}
 // TypeError: Assignment to constant variable.
 ```
 
+</div>
+</div>
 
+
+<div className='wrapper'> 
 
 ### Assignment shorthand syntax
+
+<div className='section '> 
 
 ```javascript
 const person = {
@@ -955,11 +1350,15 @@ const {name, age} = person;
 console.log(name); // 'Tom'
 console.log(age);  // '22'
 ```
+</div>
+</div>
 
 
-
+<div className='wrapper'> 
 
 ### Delete operator
+
+<div className='section '> 
 
 ```javascript
 const person = {
@@ -982,8 +1381,15 @@ console.log(person);
 	
 ```
 
+</div>
+</div>
+
+
+<div className='wrapper'> 
 
 ### Objects as arguments
+
+<div className='section '> 
 
 ```javascript
 const origNum = 8;
@@ -1004,8 +1410,14 @@ console.log(origNum);
 console.log(origObj.color);
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Shorthand object creation
+
+<div className='section '> 
 
 ```javascript
 const activity = 'Surfing';
@@ -1013,8 +1425,14 @@ const beach = { activity };
 console.log(beach); // { activity: 'Surfing' }
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### this Keyword
+
+<div className='section '> 
 
 ```javascript
 const cat = {
@@ -1027,9 +1445,14 @@ const cat = {
 console.log(cat.whatName()); // => Pipey
 ```
 
+</div>
+</div>
 
+<div className='wrapper'> 
 
 ### Factory functions
+
+<div className='section '> 
 
 ```javascript
 // A factory function that accepts 'name', 
@@ -1047,9 +1470,15 @@ const dogFactory = (name, age, breed) => {
 };
 
 ```
+</div>
+</div>
 
+
+<div className='wrapper'> 
 
 ### Methods
+
+<div className='section '> 
 
 ```javascript
 const engine = {
@@ -1067,8 +1496,15 @@ engine.start('noisily');
 engine.sputter();
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Getters and setters
+
+<div className='section '> 
+
 
 ```javascript
 const myCat = {
@@ -1087,14 +1523,20 @@ console.log(myCat.name);
 // Assignment invokes the setter
 myCat.name = 'Yankee';
 ```
+</div>
+</div>
+</div>
 
-
-
-JavaScript Classes {.cols-3}
+JavaScript Classes 
 ------------
 
+<div className='grid-box'>
+
+<div className='wrapper'> 
 
 ### Static Methods
+
+<div className='section '> 
 
 ```javascript
 class Dog {
@@ -1119,10 +1561,18 @@ myDog.introduce();
 Dog.bark();
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Class
 
+<div className='section '> 
+
+
 ```javascript
+
 class Song {
   constructor() {
     this.title;
@@ -1137,9 +1587,15 @@ class Song {
 const mySong = new Song();
 mySong.play();
 ```
+</div>
+</div>
 
+<div className='wrapper'> 
 
 ### Class Constructor
+
+<div className='section '> 
+
 
 ```javascript
 class Song {
@@ -1153,8 +1609,14 @@ const mySong = new Song('Bohemian Rhapsody', 'Queen');
 console.log(mySong.title);
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Class Methods
+
+<div className='section '> 
 
 ```javascript
 class Song {
@@ -1168,8 +1630,15 @@ class Song {
 }
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
+
 
 ### extends
+
+<div className='section '> 
 
 ```javascript
 // Parent class
@@ -1195,14 +1664,21 @@ const mySong = new Song({
 });
 ```
 
-
+</div>
+</div>
+</div>
 
 
 JavaScript Modules {.cols-2}
 ------------
 
+<div className ='grid-box grid-col2'>
+
+<div className='wrapper'> 
 
 ### Export 
+
+<div className='section '> 
 
 ```javascript
 // myMath.js
@@ -1230,8 +1706,15 @@ export {
 }
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Import 
+
+<div className='section '> 
+
 
 ```javascript
 // main.js
@@ -1246,8 +1729,14 @@ console.log(duplicate(5)) // 10
 <script type="module" src="main.js"></script>
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Export Module
+
+<div className='section '> 
 
 ```javascript
 // myMath.js
@@ -1274,8 +1763,15 @@ module.exports = {
 }
 ```
 
+</div>
+</div>
+
+
+<div className='wrapper'> 
 
 ### Require Module
+
+<div className='section '> 
 
 ```javascript
 // main.js
@@ -1288,11 +1784,20 @@ console.log(myMath.duplicate(5)) // 10
 ```
 
 
+</div>
+</div>
+</div>
+
 JavaScript Promises {.cols-2}
 ------------
 
+<div className ='grid-box grid-col2'>
 
-### Promise states  {.row-span-2}
+<div className='wrapper'> 
+
+### Promise states 
+
+<div className='section row-span2'> 
 
 ```javascript
 const promise = new Promise((resolve, reject) => {
@@ -1309,8 +1814,14 @@ const promise = new Promise((resolve, reject) => {
 promise.then((res) => console.log(res), (err) => console.error(err));
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Executor function
+
+<div className='section'> 
 
 ```javascript
 const executorFn = (resolve, reject) => {
@@ -1319,9 +1830,14 @@ const executorFn = (resolve, reject) => {
 
 const promise = new Promise(executorFn);
 ```
+</div>
+</div>
 
+<div className='wrapper'> 
 
 ### setTimeout()
+
+<div className='section'> 
 
 ```javascript
 const loginAlert = () =>{
@@ -1331,9 +1847,15 @@ const loginAlert = () =>{
 setTimeout(loginAlert, 6000);
 ```
 
+</div>
+</div>
 
+<div className='wrapper'> 
 
 ### .then() method
+
+<div className='section'> 
+
 
 ```javascript
 const promise = new Promise((resolve, reject) => {    
@@ -1350,7 +1872,14 @@ promise.then((res) => {
 ```
 
 
+</div>
+</div>
+
+<div className='wrapper'> 
+
 ### .catch() method
+
+<div className='section'> 
 
 ```javascript
 const promise = new Promise((resolve, reject) => {  
@@ -1368,8 +1897,14 @@ promise.catch((err) => {
 });
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Promise.all()
+
+<div className='section'> 
 
 ```javascript
 const promise1 = new Promise((resolve, reject) => {
@@ -1389,8 +1924,14 @@ Promise.all([promise1, promise2]).then((res) => {
 });
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Avoiding nested Promise and .then()
+
+<div className='section'> 
 
 ```javascript
 const promise = new Promise((resolve, reject) => {  
@@ -1415,9 +1956,14 @@ const print = (val) => {
 promise.then(twoStars).then(oneDot).then(print);
 ```
 
+</div>
+</div>
 
+<div className='wrapper'> 
 
 ### Creating
+
+<div className='section'> 
 
 ```javascript
 const executorFn = (resolve, reject) => {
@@ -1441,13 +1987,21 @@ promise.then(res => {
 });
 ```
 
+</div>
+</div>
+</div>
 
 
 JavaScript Async-Await {.cols-2}
 ------------
 
+<div className ='grid-box grid-col2'>
+
+<div className='wrapper'> 
 
 ### Asynchronous
+
+<div className='section'> 
 
 ```javascript
 function helloWorld() {
@@ -1472,8 +2026,15 @@ msg(); // Message: Hello World! <-- after 2 seconds
 msg1(); // Message: Hello World! <-- after 2 seconds
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Resolving Promises
+
+<div className='section'> 
+
 
 ```javascript
 let pro1 = Promise.resolve(5);
@@ -1488,8 +2049,15 @@ Promise.all([pro1, pro2, pro3]).then(function(values) {
 // expected => Array [5, 44, "foo"]
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Async Await Promises
+
+<div className='section'> 
+
 
 ```javascript
 function helloWorld() {
@@ -1508,8 +2076,15 @@ async function msg() {
 msg(); // Message: Hello World! <-- after 2 seconds
 ```
 
+</div>
+</div>
+
+
+<div className='wrapper'> 
 
 ### Error Handling
+
+<div className='section'> 
 
 ```javascript
 let json = '{ "age": 30 }'; // incomplete data
@@ -1522,8 +2097,15 @@ try {
 }
 ```
 
+</div>
+</div>
+
+
+<div className='wrapper'> 
 
 ### Aysnc await operator
+
+<div className='section'> 
 
 ```javascript
 function helloWorld() {
@@ -1542,12 +2124,22 @@ async function msg() {
 msg(); // Message: Hello World! <-- after 2 seconds
 ```
 
+</div>
+</div>
+</div>
 
 
 JavaScript Requests {.cols-3}
 ------------
 
+<div className ='grid-box'>
+
+<div className='wrapper'> 
+
 ### JSON 
+
+<div className='section'> 
+
 
 ```json
 const jsonObj = {
@@ -1558,9 +2150,14 @@ const jsonObj = {
 ```
 Also see: [JSON cheatsheet](/json)
 
+</div>
+</div>
 
+<div className='wrapper'> 
 
 ### XMLHttpRequest
+
+<div className='section'> 
 
 ```javascript
 const xhr = new XMLHttpRequest();
@@ -1568,9 +2165,14 @@ xhr.open('GET', 'mysite.com/getjson');
 ```
 `XMLHttpRequest` is a browser-level API that enables the client to script data transfers via JavaScript, NOT part of the JavaScript language.
 
+</div>
+</div>
 
+<div className='wrapper'> 
 
 ### GET
+
+<div className='section'> 
 
 ```javascript
 const req = new XMLHttpRequest();
@@ -1583,8 +2185,15 @@ req.onload = () => {
 req.send();
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### POST {.row-span-2}
+
+
+<div className='section row-span2'> 
 
 ```javascript
 const data = {
@@ -1602,8 +2211,14 @@ xhr.onload = () => {
 };
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### fetch api {.row-span-2}
+
+<div className='section row-span2'> 
 
 ```javascript
 fetch(url, {
@@ -1624,8 +2239,14 @@ fetch(url, {
 }
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### JSON Formatted
+
+<div className='section '> 
 
 ```javascript
 fetch('url-that-returns-JSON')
@@ -1635,8 +2256,14 @@ fetch('url-that-returns-JSON')
 });
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### promise url parameter fetch api
+
+<div className='section '> 
 
 ```javascript
 fetch('url')
@@ -1649,8 +2276,14 @@ fetch('url')
 );
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### Fetch API Function
+
+<div className='section '> 
 
 ```javascript
 fetch('https://api-xxx.com/endpoint', {
@@ -1668,8 +2301,14 @@ fetch('https://api-xxx.com/endpoint', {
 })
 ```
 
+</div>
+</div>
+
+<div className='wrapper'> 
 
 ### async await syntax {.col-span-2}
+
+<div className='section col-span2 '> 
 
 ```javascript
 const getSuggestions = async () => {
@@ -1687,5 +2326,8 @@ const response = await fetch(endpoint, {cache: 'no-cache'});
 }
 ```
 
+</div>
+</div>
+</div>
 
 </div>

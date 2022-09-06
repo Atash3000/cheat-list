@@ -1,46 +1,73 @@
 ---
-title : Javascript
+title : JavaScript
 Author :  Atamurad
-intro: A JavaScript cheat sheet with the most important concepts, functions, methods, and more. A complete quick reference for beginners.
+intro: A JavaScript cheat list with the most important concepts, functions, methods, and more. A complete cheat list for beginners and intermediate developers.
 background: "#8B7A24"
 ---
 
+<div className='kotak'> 
 
-
-Getting started {.cols-3}
+Getting started 
 ------------
 
+<div className='grid-box'>
+
+<div className='wrapper'>  
+
 ### Introduction
-JavaScript is a lightweight, interpreted programming language.
 
-- [JSON cheatsheet](/json) _(quickref.me)_
-- [Regex in JavaScript](/regex#regex-in-javascript) _(quickref.me)_
+<div className='section'>  
 
+JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. 
+
+</div>
+
+</div>
+
+<div className='wrapper'>  
 
 ### Console
+
+<div className='section'>  
 
 ```javascript
 // => Hello world!
 console.log('Hello world!');
 
 // => Hello QuickRef.ME
-console.warn('hello %s', 'QuickRef.ME');
+console.warn('hello %s', 'Cheat List');
 
 // Prints error message to stderr
 console.error(new Error('Oops!'));
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'>  
 
 ### Numbers
+
+<div className='section'>  
 
 ```javascript
 let amount = 6;
 let price = 4.99;
+
+// checks if value is Not a Number
+console.log(isNaN(500))  // false
+console.log(isNaN(1,500)) // true
 ```
+</div>
 
+</div>
 
+<div className='wrapper'>  
 
 ### Variables
+
+<div className='section'>  
 
 ```javascript
 let x = null;
@@ -53,22 +80,36 @@ console.log(name, found, x);
 var a;
 console.log(a); // => undefined
 ```
+</div>
+
+</div>
+
+
+<div className='wrapper'>  
 
 
 ### Strings
 
-```javascript
-let single = 'Wheres my bandit hat?';
-let double = "Wheres my bandit hat?";
+<div className='section'>  
 
-// => 21
-console.log(single.length);
+```javascript
+let dogName = 'Pupsik';
+let dogName2 = "Pancho";
+
+// number of letters dogName has
+console.log(dogName.length) // 6
 
 ```
+</div>
 
+</div>
+
+<div className='wrapper'>  
 
 
 ### Arithmetic Operators
+
+<div className='section'>  
 
 ```javascript
 5 + 5 = 10     // Addition
@@ -77,9 +118,15 @@ console.log(single.length);
 10 / 5 = 2     // Division
 10 % 5 = 0     // Modulo
 ```
+</div>
 
+</div>
+
+<div className='wrapper'>  
 
 ### Comments
+
+<div className='section'>  
 
 ```javascript
 // This line will denote a comment
@@ -91,8 +138,16 @@ changed before deployment.
 
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'>  
+
 
 ### Assignment Operators
+
+<div className='section'>  
 
 ```javascript
 let number = 100;
@@ -105,23 +160,38 @@ console.log(number);
 // => 120
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'>  
+
 
 ### String Interpolation
+
+<div className='section'>  
 
 ```javascript
 let age = 7;
 
 // String concatenation
-'Tommy is ' + age + ' years old.';
+'Hamza is ' + age + ' years old.';
 
 // String interpolation
-`Tommy is ${age} years old.`;
+`Hamza is ${age} years old.`;
+
+`Hamza is ${age+age} years old.`;
 ```
 
+</div>
 
+</div>
 
+<div className='wrapper'>  
 
 ### let Keyword
+
+<div className='section'>  
 
 ```javascript
 let count; 
@@ -130,8 +200,15 @@ count = 10;
 console.log(count); // => 10
 ```
 
+</div>
+
+</div>
+
+<div className='wrapper'>  
 
 ### const Keyword
+
+<div className='section'>  
 
 ```javascript
 const numberOfColumns = 4;
@@ -140,6 +217,11 @@ const numberOfColumns = 4;
 numberOfColumns = 8;
 ```
 
+</div>
+
+</div>
+
+</div>
 
 
 JavaScript Conditionals {.cols-3}
@@ -1604,3 +1686,6 @@ const response = await fetch(endpoint, {cache: 'no-cache'});
   }
 }
 ```
+
+
+</div>

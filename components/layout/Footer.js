@@ -3,6 +3,8 @@ import {FaFacebookF} from 'react-icons/fa'
 import Link from 'next/link';
 
 function Footer() {
+
+  let currYear = new Date().getFullYear() 
   return (
     <footer className='text-slate-700 dark:text-slate-300 bg-slate-200 dark:bg-slate-800 md:mt-14'>
       <div className='max-container mb-8 md:py-10 mx-auto flex md:items-center lg:items-start md:flex-row flex-col'>
@@ -192,7 +194,7 @@ function Footer() {
       <div className='max-container border-b border-slate-300 dark:border-slate-700'></div>
       <div className='max-container flex flex-col sm:flex-row items-center'>
         <p className='py-2 md:py-3 text-slate-500 text-sm text-center w-full'>
-          © 2022 QuickRef.ME, All rights reserved.
+          © {currYear} Cheat List, All rights reserved
         </p>
       </div>
     </footer>
